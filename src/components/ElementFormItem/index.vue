@@ -58,6 +58,7 @@
 <script>
 // 点击切换模式的时候，通过v-if切换显示的模式，但是<el-form-item/>会被复用，从而不会再次触发el-form-item中的mounted生命周期函数
 // 从而导致重置方法出现问题
+// 疑问：vue是如何判断<el-form-item/>可以复用的
 export default {
   name: 'ElementFormItem',
   data() {
